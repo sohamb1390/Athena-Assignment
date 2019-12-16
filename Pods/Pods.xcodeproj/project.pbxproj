@@ -65,9 +65,9 @@
 		0DE5E3A1B915B25B5E955D7E5C8DA178 /* Pods-Athena-Assigment.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Athena-Assigment.modulemap"; sourceTree = "<group>"; };
 		0E6C57B7BCC2A93980200D7E7F10B136 /* Zip-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zip-prefix.pch"; sourceTree = "<group>"; };
 		111FE4857646805FB8D43CDDE6AD6C2A /* Pods-Athena-Assigment-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Athena-Assigment-Info.plist"; sourceTree = "<group>"; };
-		1D07A568EFFFFD8B6E95CC0F962FC57B /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = Zip/minizip/zip.c; sourceTree = "<group>"; };
+		1D07A568EFFFFD8B6E95CC0F962FC57B /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = zip.c; path = Zip/minizip/zip.c; sourceTree = "<group>"; };
 		24DEAB9B41CF01C78EB9D6AEA2A7568B /* Pods-Athena-AssigmentTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Athena-AssigmentTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		2BAC445E26D4A85B4297D865786B19A1 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = Zip/minizip/ioapi.c; sourceTree = "<group>"; };
+		2BAC445E26D4A85B4297D865786B19A1 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = Zip/minizip/ioapi.c; sourceTree = "<group>"; };
 		3419AB71ADAB4787CF0EE555DA34BEAB /* Pods-Athena-AssigmentTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Athena-AssigmentTests-Info.plist"; sourceTree = "<group>"; };
 		4176D416C8C1ECEDF19E65A3FD5D3FE5 /* Zip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Zip-dummy.m"; sourceTree = "<group>"; };
 		43C66AD45A6C6C3476A7C909F3E5EAE0 /* Pods-Athena-Assigment-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Athena-Assigment-dummy.m"; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 		53BC63006B10D76C3A46CA28CFFE26EC /* Zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Zip.h; path = Zip/Zip.h; sourceTree = "<group>"; };
 		565B750D879A626D0A95C22BAC7F491F /* Pods-Athena-AssigmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Athena-AssigmentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		593D9E27C3338E204E00A56375BA2E15 /* ZipUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZipUtilities.swift; path = Zip/ZipUtilities.swift; sourceTree = "<group>"; };
-		68F6B9BCE9B80792471D52D7DAB52C49 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = Zip/minizip/unzip.c; sourceTree = "<group>"; };
+		68F6B9BCE9B80792471D52D7DAB52C49 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = unzip.c; path = Zip/minizip/unzip.c; sourceTree = "<group>"; };
 		69030554F173EA2F91BF066C8BB1B866 /* Zip.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Zip.xcconfig; sourceTree = "<group>"; };
 		763AE22DC03A5B10E0D0F3E840F3607A /* Pods-Athena-AssigmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Athena-AssigmentTests.release.xcconfig"; sourceTree = "<group>"; };
 		7A5F8CD3CF3F869F8B876A5C9E61383D /* Pods-Athena-AssigmentTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Athena-AssigmentTests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -85,15 +85,15 @@
 		879D7840B094BDC1A2D9FE6E674163B2 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		898A0E0FB340F8B55D9FC29CF3A5AF83 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
 		8A8ACEBAADC0881BE2CD6B3232F2FCC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		923B9152DB233DA7E6C9DCC6195FABB1 /* Pods_Athena_Assigment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Athena_Assigment.framework; path = "Pods-Athena-Assigment.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		923B9152DB233DA7E6C9DCC6195FABB1 /* Pods_Athena_Assigment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Athena_Assigment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93EE0BDC80C1191063ABB88B3E6C3578 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 		9925BCC76D54655CA0C490611F8A4FCC /* Pods-Athena-Assigment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Athena-Assigment.debug.xcconfig"; sourceTree = "<group>"; };
 		9A7A9C34D671CFE79DE7ED3B4AFC9AE8 /* Pods-Athena-Assigment-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Athena-Assigment-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A2710D02F833B88774F52570C5A226BA /* Zip-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zip-umbrella.h"; sourceTree = "<group>"; };
 		A78A4909933A53F28224FD395B19FDB0 /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = Zip/minizip/crypt.h; sourceTree = "<group>"; };
-		A845402EF959A57A4640F2A4F5155943 /* Zip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Zip.framework; path = Zip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A845402EF959A57A4640F2A4F5155943 /* Zip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Zip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD27B1C1B5D2F31F501108838D28EF02 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		B3E7FA7BD4337AFEA13000A8EC6A4B5C /* Pods-Athena-Assigment-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Athena-Assigment-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B7A2134B0E9A7502706157B088C041A7 /* Pods-Athena-AssigmentTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Athena-AssigmentTests-dummy.m"; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 		DB3E04A907C4503447CC114E40ECB3AA /* Pods-Athena-Assigment-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Athena-Assigment-acknowledgements.plist"; sourceTree = "<group>"; };
 		E9224BFA4CAF4111B9D4C1C848C8DECC /* QuickZip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickZip.swift; path = Zip/QuickZip.swift; sourceTree = "<group>"; };
 		E9D04DE86A0FD56B08BCC5E78A9D518E /* Zip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Zip.swift; path = Zip/Zip.swift; sourceTree = "<group>"; };
-		EFA5930F0D06DDDD6C420BCF4A258373 /* Pods_Athena_AssigmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Athena_AssigmentTests.framework; path = "Pods-Athena-AssigmentTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFA5930F0D06DDDD6C420BCF4A258373 /* Pods_Athena_AssigmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Athena_AssigmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F21AA8C8C60EE4F5EA605B73EC772C8E /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = Zip/minizip/zip.h; sourceTree = "<group>"; };
 		F36D894BF3EE82E7806F333AEC1CB875 /* MBProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MBProgressHUD-Info.plist"; sourceTree = "<group>"; };
 		FFA51DF58BFD369AF6BE252245A18B2F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -226,7 +226,6 @@
 				593D9E27C3338E204E00A56375BA2E15 /* ZipUtilities.swift */,
 				8A574AB1B9409E7EDAAC604D9C453DAF /* Support Files */,
 			);
-			name = Zip;
 			path = Zip;
 			sourceTree = "<group>";
 		};
@@ -297,7 +296,6 @@
 				879D7840B094BDC1A2D9FE6E674163B2 /* MBProgressHUD.m */,
 				4A47AF3196648A60C99D4B9BAA6CC45D /* Support Files */,
 			);
-			name = MBProgressHUD;
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -435,6 +433,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = 44DE77D724AE62CCF8C8989DB527B365 /* Products */;

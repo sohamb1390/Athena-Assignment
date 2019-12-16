@@ -54,7 +54,7 @@ class Athena_AssigmentTests: XCTestCase {
     func fileSave(from location: URL) {
         let documentsUrl = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
         // your destination file url
-        let destination = documentsUrl.appendingPathComponent("Athena-Assignment.zip")
+        let destination = documentsUrl.appendingPathComponent("Athena-Assignment")
         print(destination)
         
         if FileManager.default.fileExists(atPath: destination.path) {
@@ -81,6 +81,91 @@ class Athena_AssigmentTests: XCTestCase {
             XCTAssert(!zipFilePath.absoluteString.isEmpty, "zipFilePath not found")
         } catch (let error) {
             XCTFail(error.localizedDescription)
+        }
+    }
+    
+    func testDecodeCategory() {
+        let documentsUrl = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+        
+        // your destination file url
+        let destination = documentsUrl.appendingPathComponent("Athena-Assignment")
+        
+        let finalURL = destination.appendingPathComponent("assignment/disease/list/CategoryList").appendingPathExtension("json")
+        
+        if FileManager.default.fileExists(atPath: destination.path) {
+            do {
+                let data = try Data(contentsOf: finalURL, options: .mappedIfSafe)
+                let category = try JSONDecoder().decode(Category.self, from: data)
+                XCTAssertNotNil(category, "Category couldn't be decoded")
+                print(category)
+            } catch (let error) {
+                // handle error
+                XCTFail(error.localizedDescription)
+            }
+
+        }
+    }
+    
+    func testDecodeTopic() {
+        let documentsUrl = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+        
+        // your destination file url
+        let destination = documentsUrl.appendingPathComponent("Athena-Assignment")
+        
+        let finalURL = destination.appendingPathComponent("assignment/disease/list/TopicsList").appendingPathExtension("json")
+        
+        if FileManager.default.fileExists(atPath: destination.path) {
+            do {
+                let data = try Data(contentsOf: finalURL, options: .mappedIfSafe)
+                let topic = try JSONDecoder().decode(Topic.self, from: data)
+                XCTAssertNotNil(topic, "Topics couldn't be decoded")
+                print(topic)
+            } catch (let error) {
+                // handle error
+                XCTFail(error.localizedDescription)
+            }
+        }
+    }
+    
+    func testDecodeTopicSubKey() {
+        let documentsUrl = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+        
+        // your destination file url
+        let destination = documentsUrl.appendingPathComponent("Athena-Assignment")
+        
+        let finalURL = destination.appendingPathComponent("assignment/disease/list/TopicsSubKey").appendingPathExtension("json")
+        
+        if FileManager.default.fileExists(atPath: destination.path) {
+            do {
+                let data = try Data(contentsOf: finalURL, options: .mappedIfSafe)
+                let topicSubKey = try JSONDecoder().decode(TopicSubKey.self, from: data)
+                XCTAssertNotNil(topicSubKey, "Topic SubKeys couldn't be decoded")
+                print(topicSubKey)
+            } catch (let error) {
+                // handle error
+                XCTFail(error.localizedDescription)
+            }
+        }
+    }
+    
+    func testDecodeDisease() {
+        let documentsUrl = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+        
+        // your destination file url
+        let destination = documentsUrl.appendingPathComponent("Athena-Assignment")
+        
+        let finalURL = destination.appendingPathComponent("assignment/disease/monograph/83").appendingPathExtension("json")
+        
+        if FileManager.default.fileExists(atPath: destination.path) {
+            do {
+                let data = try Data(contentsOf: finalURL, options: .mappedIfSafe)
+                let disease = try JSONDecoder().decode(Disease.self, from: data)
+                XCTAssertNotNil(disease, "Disease couldn't be decoded")
+                print(disease)
+            } catch (let error) {
+                // handle error
+                XCTFail(error.localizedDescription)
+            }
         }
     }
 }

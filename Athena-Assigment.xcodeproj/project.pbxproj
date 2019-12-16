@@ -8,10 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		08A4B9684064E677CAEBCB78 /* Pods_Athena_Assigment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2CF740E3DD213E7FDAA345 /* Pods_Athena_Assigment.framework */; };
+		442BE71423A7CFCE00E49476 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442BE71323A7CFCE00E49476 /* Category.swift */; };
+		442BE71623A7DBC200E49476 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442BE71523A7DBC200E49476 /* Topic.swift */; };
+		442BE71823A7DC9600E49476 /* TopicSubKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442BE71723A7DC9600E49476 /* TopicSubKey.swift */; };
+		442BE71A23A7DF6200E49476 /* Disease.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442BE71923A7DF6200E49476 /* Disease.swift */; };
+		442BE71D23A7E1D500E49476 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442BE71C23A7E1D500E49476 /* CategoryViewModel.swift */; };
 		D05C5045381B91793E03BF05 /* Pods_Athena_AssigmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BB5C2A7875743395D8EE7D /* Pods_Athena_AssigmentTests.framework */; };
 		F201297823A7794F00322B57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F201297723A7794F00322B57 /* AppDelegate.swift */; };
 		F201297A23A7794F00322B57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F201297923A7794F00322B57 /* SceneDelegate.swift */; };
-		F201297C23A7794F00322B57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F201297B23A7794F00322B57 /* ViewController.swift */; };
+		F201297C23A7794F00322B57 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F201297B23A7794F00322B57 /* CategoryViewController.swift */; };
 		F201297F23A7794F00322B57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F201297D23A7794F00322B57 /* Main.storyboard */; };
 		F201298123A7795500322B57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F201298023A7795500322B57 /* Assets.xcassets */; };
 		F201298423A7795500322B57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F201298223A7795500322B57 /* LaunchScreen.storyboard */; };
@@ -35,6 +40,11 @@
 /* Begin PBXFileReference section */
 		158F3711E0B1100D5E4AA900 /* Pods-Athena-Assigment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Athena-Assigment.release.xcconfig"; path = "Target Support Files/Pods-Athena-Assigment/Pods-Athena-Assigment.release.xcconfig"; sourceTree = "<group>"; };
 		3638A4EADE6A555F6F56B36B /* Pods-Athena-Assigment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Athena-Assigment.debug.xcconfig"; path = "Target Support Files/Pods-Athena-Assigment/Pods-Athena-Assigment.debug.xcconfig"; sourceTree = "<group>"; };
+		442BE71323A7CFCE00E49476 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		442BE71523A7DBC200E49476 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
+		442BE71723A7DC9600E49476 /* TopicSubKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicSubKey.swift; sourceTree = "<group>"; };
+		442BE71923A7DF6200E49476 /* Disease.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disease.swift; sourceTree = "<group>"; };
+		442BE71C23A7E1D500E49476 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
 		7B2CF740E3DD213E7FDAA345 /* Pods_Athena_Assigment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Athena_Assigment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B7F3E67989791A6462EB6FB /* Pods-Athena-AssigmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Athena-AssigmentTests.debug.xcconfig"; path = "Target Support Files/Pods-Athena-AssigmentTests/Pods-Athena-AssigmentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A5BB5C2A7875743395D8EE7D /* Pods_Athena_AssigmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Athena_AssigmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,7 +52,7 @@
 		F201297423A7794F00322B57 /* Athena-Assigment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Athena-Assigment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F201297723A7794F00322B57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F201297923A7794F00322B57 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F201297B23A7794F00322B57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F201297B23A7794F00322B57 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		F201297E23A7794F00322B57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F201298023A7795500322B57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F201298323A7795500322B57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -96,6 +106,25 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		442BE71223A7CFA900E49476 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				442BE71323A7CFCE00E49476 /* Category.swift */,
+				442BE71523A7DBC200E49476 /* Topic.swift */,
+				442BE71723A7DC9600E49476 /* TopicSubKey.swift */,
+				442BE71923A7DF6200E49476 /* Disease.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		442BE71B23A7E1C400E49476 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				442BE71C23A7E1D500E49476 /* CategoryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		F201296B23A7794E00322B57 = {
 			isa = PBXGroup;
 			children = (
@@ -119,10 +148,12 @@
 		F201297623A7794F00322B57 /* Athena-Assigment */ = {
 			isa = PBXGroup;
 			children = (
+				442BE71B23A7E1C400E49476 /* ViewModel */,
+				442BE71223A7CFA900E49476 /* Model */,
 				F201299923A779D200322B57 /* Network */,
 				F201297723A7794F00322B57 /* AppDelegate.swift */,
 				F201297923A7794F00322B57 /* SceneDelegate.swift */,
-				F201297B23A7794F00322B57 /* ViewController.swift */,
+				F201297B23A7794F00322B57 /* CategoryViewController.swift */,
 				F201297D23A7794F00322B57 /* Main.storyboard */,
 				F201298023A7795500322B57 /* Assets.xcassets */,
 				F201298223A7795500322B57 /* LaunchScreen.storyboard */,
@@ -328,12 +359,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F20129A223A77B0C00322B57 /* AthenaAPIConstants.swift in Sources */,
+				442BE71623A7DBC200E49476 /* Topic.swift in Sources */,
+				442BE71A23A7DF6200E49476 /* Disease.swift in Sources */,
 				F20129A023A77AA400322B57 /* AthenaNetworkError.swift in Sources */,
-				F201297C23A7794F00322B57 /* ViewController.swift in Sources */,
+				F201297C23A7794F00322B57 /* CategoryViewController.swift in Sources */,
 				F201299B23A779E300322B57 /* AthenaNetworkAdapter.swift in Sources */,
 				F201297823A7794F00322B57 /* AppDelegate.swift in Sources */,
+				442BE71823A7DC9600E49476 /* TopicSubKey.swift in Sources */,
 				F201299E23A77A6D00322B57 /* AthenaAPIRequestProtocol.swift in Sources */,
 				F201297A23A7794F00322B57 /* SceneDelegate.swift in Sources */,
+				442BE71D23A7E1D500E49476 /* CategoryViewModel.swift in Sources */,
+				442BE71423A7CFCE00E49476 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
