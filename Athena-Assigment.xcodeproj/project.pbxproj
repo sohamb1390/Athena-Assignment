@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08A4B9684064E677CAEBCB78 /* Pods_Athena_Assigment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2CF740E3DD213E7FDAA345 /* Pods_Athena_Assigment.framework */; };
+		D05C5045381B91793E03BF05 /* Pods_Athena_AssigmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BB5C2A7875743395D8EE7D /* Pods_Athena_AssigmentTests.framework */; };
+		F201297823A7794F00322B57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F201297723A7794F00322B57 /* AppDelegate.swift */; };
+		F201297A23A7794F00322B57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F201297923A7794F00322B57 /* SceneDelegate.swift */; };
+		F201297C23A7794F00322B57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F201297B23A7794F00322B57 /* ViewController.swift */; };
+		F201297F23A7794F00322B57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F201297D23A7794F00322B57 /* Main.storyboard */; };
+		F201298123A7795500322B57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F201298023A7795500322B57 /* Assets.xcassets */; };
+		F201298423A7795500322B57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F201298223A7795500322B57 /* LaunchScreen.storyboard */; };
+		F201298F23A7795500322B57 /* Athena_AssigmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F201298E23A7795500322B57 /* Athena_AssigmentTests.swift */; };
+		F201299B23A779E300322B57 /* AthenaNetworkAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F201299A23A779E300322B57 /* AthenaNetworkAdapter.swift */; };
+		F201299E23A77A6D00322B57 /* AthenaAPIRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F201299D23A77A6D00322B57 /* AthenaAPIRequestProtocol.swift */; };
+		F20129A023A77AA400322B57 /* AthenaNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F201299F23A77AA400322B57 /* AthenaNetworkError.swift */; };
+		F20129A223A77B0C00322B57 /* AthenaAPIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20129A123A77B0C00322B57 /* AthenaAPIConstants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F201298B23A7795500322B57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F201296C23A7794E00322B57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F201297323A7794F00322B57;
+			remoteInfo = "Athena-Assigment";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		158F3711E0B1100D5E4AA900 /* Pods-Athena-Assigment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Athena-Assigment.release.xcconfig"; path = "Target Support Files/Pods-Athena-Assigment/Pods-Athena-Assigment.release.xcconfig"; sourceTree = "<group>"; };
+		3638A4EADE6A555F6F56B36B /* Pods-Athena-Assigment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Athena-Assigment.debug.xcconfig"; path = "Target Support Files/Pods-Athena-Assigment/Pods-Athena-Assigment.debug.xcconfig"; sourceTree = "<group>"; };
+		7B2CF740E3DD213E7FDAA345 /* Pods_Athena_Assigment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Athena_Assigment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B7F3E67989791A6462EB6FB /* Pods-Athena-AssigmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Athena-AssigmentTests.debug.xcconfig"; path = "Target Support Files/Pods-Athena-AssigmentTests/Pods-Athena-AssigmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A5BB5C2A7875743395D8EE7D /* Pods_Athena_AssigmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Athena_AssigmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3C56DE6BC786C8E0FEB56EF /* Pods-Athena-AssigmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Athena-AssigmentTests.release.xcconfig"; path = "Target Support Files/Pods-Athena-AssigmentTests/Pods-Athena-AssigmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		F201297423A7794F00322B57 /* Athena-Assigment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Athena-Assigment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F201297723A7794F00322B57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F201297923A7794F00322B57 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F201297B23A7794F00322B57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F201297E23A7794F00322B57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F201298023A7795500322B57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F201298323A7795500322B57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F201298523A7795500322B57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F201298A23A7795500322B57 /* Athena-AssigmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Athena-AssigmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F201298E23A7795500322B57 /* Athena_AssigmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Athena_AssigmentTests.swift; sourceTree = "<group>"; };
+		F201299023A7795500322B57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F201299A23A779E300322B57 /* AthenaNetworkAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthenaNetworkAdapter.swift; sourceTree = "<group>"; };
+		F201299D23A77A6D00322B57 /* AthenaAPIRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthenaAPIRequestProtocol.swift; sourceTree = "<group>"; };
+		F201299F23A77AA400322B57 /* AthenaNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthenaNetworkError.swift; sourceTree = "<group>"; };
+		F20129A123A77B0C00322B57 /* AthenaAPIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthenaAPIConstants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F201297123A7794F00322B57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A4B9684064E677CAEBCB78 /* Pods_Athena_Assigment.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F201298723A7795500322B57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D05C5045381B91793E03BF05 /* Pods_Athena_AssigmentTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D60F569A17BD3478B2E0DDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B2CF740E3DD213E7FDAA345 /* Pods_Athena_Assigment.framework */,
+				A5BB5C2A7875743395D8EE7D /* Pods_Athena_AssigmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3116D65EA77A387E5058B04C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3638A4EADE6A555F6F56B36B /* Pods-Athena-Assigment.debug.xcconfig */,
+				158F3711E0B1100D5E4AA900 /* Pods-Athena-Assigment.release.xcconfig */,
+				8B7F3E67989791A6462EB6FB /* Pods-Athena-AssigmentTests.debug.xcconfig */,
+				B3C56DE6BC786C8E0FEB56EF /* Pods-Athena-AssigmentTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F201296B23A7794E00322B57 = {
+			isa = PBXGroup;
+			children = (
+				F201297623A7794F00322B57 /* Athena-Assigment */,
+				F201298D23A7795500322B57 /* Athena-AssigmentTests */,
+				F201297523A7794F00322B57 /* Products */,
+				3116D65EA77A387E5058B04C /* Pods */,
+				0D60F569A17BD3478B2E0DDE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F201297523A7794F00322B57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F201297423A7794F00322B57 /* Athena-Assigment.app */,
+				F201298A23A7795500322B57 /* Athena-AssigmentTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F201297623A7794F00322B57 /* Athena-Assigment */ = {
+			isa = PBXGroup;
+			children = (
+				F201299923A779D200322B57 /* Network */,
+				F201297723A7794F00322B57 /* AppDelegate.swift */,
+				F201297923A7794F00322B57 /* SceneDelegate.swift */,
+				F201297B23A7794F00322B57 /* ViewController.swift */,
+				F201297D23A7794F00322B57 /* Main.storyboard */,
+				F201298023A7795500322B57 /* Assets.xcassets */,
+				F201298223A7795500322B57 /* LaunchScreen.storyboard */,
+				F201298523A7795500322B57 /* Info.plist */,
+			);
+			path = "Athena-Assigment";
+			sourceTree = "<group>";
+		};
+		F201298D23A7795500322B57 /* Athena-AssigmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				F201298E23A7795500322B57 /* Athena_AssigmentTests.swift */,
+				F201299023A7795500322B57 /* Info.plist */,
+			);
+			path = "Athena-AssigmentTests";
+			sourceTree = "<group>";
+		};
+		F201299923A779D200322B57 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F201299C23A77A6100322B57 /* Protocol */,
+				F201299A23A779E300322B57 /* AthenaNetworkAdapter.swift */,
+				F201299F23A77AA400322B57 /* AthenaNetworkError.swift */,
+				F20129A123A77B0C00322B57 /* AthenaAPIConstants.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F201299C23A77A6100322B57 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F201299D23A77A6D00322B57 /* AthenaAPIRequestProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F201297323A7794F00322B57 /* Athena-Assigment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F201299323A7795500322B57 /* Build configuration list for PBXNativeTarget "Athena-Assigment" */;
+			buildPhases = (
+				4A3B3E21F1CB30D70806A6CA /* [CP] Check Pods Manifest.lock */,
+				F201297023A7794F00322B57 /* Sources */,
+				F201297123A7794F00322B57 /* Frameworks */,
+				F201297223A7794F00322B57 /* Resources */,
+				17590AE2FB5606106E68A0DF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Athena-Assigment";
+			productName = "Athena-Assigment";
+			productReference = F201297423A7794F00322B57 /* Athena-Assigment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F201298923A7795500322B57 /* Athena-AssigmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F201299623A7795500322B57 /* Build configuration list for PBXNativeTarget "Athena-AssigmentTests" */;
+			buildPhases = (
+				16BC119E14B105F104E451BF /* [CP] Check Pods Manifest.lock */,
+				F201298623A7795500322B57 /* Sources */,
+				F201298723A7795500322B57 /* Frameworks */,
+				F201298823A7795500322B57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F201298C23A7795500322B57 /* PBXTargetDependency */,
+			);
+			name = "Athena-AssigmentTests";
+			productName = "Athena-AssigmentTests";
+			productReference = F201298A23A7795500322B57 /* Athena-AssigmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F201296C23A7794E00322B57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Soham Bhattacharjee";
+				TargetAttributes = {
+					F201297323A7794F00322B57 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					F201298923A7795500322B57 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = F201297323A7794F00322B57;
+					};
+				};
+			};
+			buildConfigurationList = F201296F23A7794E00322B57 /* Build configuration list for PBXProject "Athena-Assigment" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F201296B23A7794E00322B57;
+			productRefGroup = F201297523A7794F00322B57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F201297323A7794F00322B57 /* Athena-Assigment */,
+				F201298923A7795500322B57 /* Athena-AssigmentTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F201297223A7794F00322B57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F201298423A7795500322B57 /* LaunchScreen.storyboard in Resources */,
+				F201298123A7795500322B57 /* Assets.xcassets in Resources */,
+				F201297F23A7794F00322B57 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F201298823A7795500322B57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16BC119E14B105F104E451BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Athena-AssigmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		17590AE2FB5606106E68A0DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Athena-Assigment/Pods-Athena-Assigment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Athena-Assigment/Pods-Athena-Assigment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Athena-Assigment/Pods-Athena-Assigment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A3B3E21F1CB30D70806A6CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Athena-Assigment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F201297023A7794F00322B57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F20129A223A77B0C00322B57 /* AthenaAPIConstants.swift in Sources */,
+				F20129A023A77AA400322B57 /* AthenaNetworkError.swift in Sources */,
+				F201297C23A7794F00322B57 /* ViewController.swift in Sources */,
+				F201299B23A779E300322B57 /* AthenaNetworkAdapter.swift in Sources */,
+				F201297823A7794F00322B57 /* AppDelegate.swift in Sources */,
+				F201299E23A77A6D00322B57 /* AthenaAPIRequestProtocol.swift in Sources */,
+				F201297A23A7794F00322B57 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F201298623A7795500322B57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F201298F23A7795500322B57 /* Athena_AssigmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F201298C23A7795500322B57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F201297323A7794F00322B57 /* Athena-Assigment */;
+			targetProxy = F201298B23A7795500322B57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F201297D23A7794F00322B57 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F201297E23A7794F00322B57 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F201298223A7795500322B57 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F201298323A7795500322B57 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F201299123A7795500322B57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F201299223A7795500322B57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F201299423A7795500322B57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3638A4EADE6A555F6F56B36B /* Pods-Athena-Assigment.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4W4TW83V28;
+				INFOPLIST_FILE = "Athena-Assigment/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soham.Athena-Assigment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F201299523A7795500322B57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 158F3711E0B1100D5E4AA900 /* Pods-Athena-Assigment.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4W4TW83V28;
+				INFOPLIST_FILE = "Athena-Assigment/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soham.Athena-Assigment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F201299723A7795500322B57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B7F3E67989791A6462EB6FB /* Pods-Athena-AssigmentTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4W4TW83V28;
+				INFOPLIST_FILE = "Athena-AssigmentTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soham.Athena-AssigmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Athena-Assigment.app/Athena-Assigment";
+			};
+			name = Debug;
+		};
+		F201299823A7795500322B57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3C56DE6BC786C8E0FEB56EF /* Pods-Athena-AssigmentTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4W4TW83V28;
+				INFOPLIST_FILE = "Athena-AssigmentTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soham.Athena-AssigmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Athena-Assigment.app/Athena-Assigment";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F201296F23A7794E00322B57 /* Build configuration list for PBXProject "Athena-Assigment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F201299123A7795500322B57 /* Debug */,
+				F201299223A7795500322B57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F201299323A7795500322B57 /* Build configuration list for PBXNativeTarget "Athena-Assigment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F201299423A7795500322B57 /* Debug */,
+				F201299523A7795500322B57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F201299623A7795500322B57 /* Build configuration list for PBXNativeTarget "Athena-AssigmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F201299723A7795500322B57 /* Debug */,
+				F201299823A7795500322B57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F201296C23A7794E00322B57 /* Project object */;
+}

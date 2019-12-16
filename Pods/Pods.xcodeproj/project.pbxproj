@@ -1,0 +1,1018 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		035CC5E518F04148C9A3A0B3BB0EF1AA /* ZipUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593D9E27C3338E204E00A56375BA2E15 /* ZipUtilities.swift */; };
+		0B59D8FE732DC50552FCEE4F0D7753B2 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = A78A4909933A53F28224FD395B19FDB0 /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		39464E5D948269EA20FD8367F5571A25 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = C12C5921D2F2A82F523B9F53B9F41C2E /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3DD8E593CD1E9C16A27C316ED398F1EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A8ACEBAADC0881BE2CD6B3232F2FCC2 /* Foundation.framework */; };
+		5B36E92ED200CE3CE6C5ACD8EAB12587 /* Pods-Athena-Assigment-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C66AD45A6C6C3476A7C909F3E5EAE0 /* Pods-Athena-Assigment-dummy.m */; };
+		64F46B6A8DBA885AF570A54A082D1BAA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA51DF58BFD369AF6BE252245A18B2F /* QuartzCore.framework */; };
+		6C7EE0B20F048C5751C7451A509A5E64 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 68F6B9BCE9B80792471D52D7DAB52C49 /* unzip.c */; };
+		70EE1C774C978E1876AE6CA1224E897D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 879D7840B094BDC1A2D9FE6E674163B2 /* MBProgressHUD.m */; };
+		81B9E2F21B1EF9FE4E769103108DEA8A /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CEACDB564C9B21A8D062A88E2D03038B /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F582D2F1FFD2E29FB76EA922E89D2A4 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 1D07A568EFFFFD8B6E95CC0F962FC57B /* zip.c */; };
+		8FB420C8BEC39AD4DDD47B1C482A91EB /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = D727A9AC72D82CF99E514242AC1581F7 /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9EB9FA13348DE6C101C92D52CDCCBDC1 /* Pods-Athena-AssigmentTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A2134B0E9A7502706157B088C041A7 /* Pods-Athena-AssigmentTests-dummy.m */; };
+		A601994621C892656F60D1A1292A9565 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD27B1C1B5D2F31F501108838D28EF02 /* CoreGraphics.framework */; };
+		B32AAC463925D876F97F6621FC5D8B5F /* Zip-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2710D02F833B88774F52570C5A226BA /* Zip-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B56A6B7607652084F01A0C2AA19E25FF /* Pods-Athena-AssigmentTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F553CF4DB5C5225547CD8524A4F7A1E /* Pods-Athena-AssigmentTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6A5703A14FB0F8D103C25A94DDC82D3 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 2BAC445E26D4A85B4297D865786B19A1 /* ioapi.c */; };
+		BA85188518D04B0705E79688AD709C8D /* Zip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4176D416C8C1ECEDF19E65A3FD5D3FE5 /* Zip-dummy.m */; };
+		BB43B38CCA690577BF5C8E93FE9283FF /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = F21AA8C8C60EE4F5EA605B73EC772C8E /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C8BEF2B08C3EBA3B3918EB386D40A177 /* QuickZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9224BFA4CAF4111B9D4C1C848C8DECC /* QuickZip.swift */; };
+		D822E284AC96E564F3936712CC693928 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A8ACEBAADC0881BE2CD6B3232F2FCC2 /* Foundation.framework */; };
+		D997C8F1FF5A9EA24EF1D3F8538220C0 /* Pods-Athena-Assigment-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A7A9C34D671CFE79DE7ED3B4AFC9AE8 /* Pods-Athena-Assigment-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DABF20F73D27572CD97071A6D4DB9004 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 828187A389A632E89824C389AB230610 /* MBProgressHUD-dummy.m */; };
+		DD63D6063EB5DAA46DCE7CF331DEA370 /* Zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 53BC63006B10D76C3A46CA28CFFE26EC /* Zip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DED61194C9A5D02515F1B85426EC543B /* Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D04DE86A0FD56B08BCC5E78A9D518E /* Zip.swift */; };
+		EB2A4C29BE958CCB03B3FD9FAB927F1F /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 035E87E1FDE775A3F84641EF23D6A89F /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6E97A9DA04796BEEA464AC0203E0445 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A8ACEBAADC0881BE2CD6B3232F2FCC2 /* Foundation.framework */; };
+		FF0EE7E6F869E55DA268F25622674EB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A8ACEBAADC0881BE2CD6B3232F2FCC2 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41271DF0D22A677DC64FA8ADE89817C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31708EE6929C61C0EDA6F5DAE3AF9DB7;
+			remoteInfo = Zip;
+		};
+		72615F354524E0297E9B4F2AA394625A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82B0A41D3031FF27D78E17B0A9A46FB0;
+			remoteInfo = MBProgressHUD;
+		};
+		E8116DB2C84C95DFF4D085F5ACCA4E2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32EFFE5CC46BB0BE1BEF8B264EDF968D;
+			remoteInfo = "Pods-Athena-Assigment";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		035E87E1FDE775A3F84641EF23D6A89F /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		0DE5E3A1B915B25B5E955D7E5C8DA178 /* Pods-Athena-Assigment.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Athena-Assigment.modulemap"; sourceTree = "<group>"; };
+		0E6C57B7BCC2A93980200D7E7F10B136 /* Zip-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zip-prefix.pch"; sourceTree = "<group>"; };
+		111FE4857646805FB8D43CDDE6AD6C2A /* Pods-Athena-Assigment-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Athena-Assigment-Info.plist"; sourceTree = "<group>"; };
+		1D07A568EFFFFD8B6E95CC0F962FC57B /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = Zip/minizip/zip.c; sourceTree = "<group>"; };
+		24DEAB9B41CF01C78EB9D6AEA2A7568B /* Pods-Athena-AssigmentTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Athena-AssigmentTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2BAC445E26D4A85B4297D865786B19A1 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = Zip/minizip/ioapi.c; sourceTree = "<group>"; };
+		3419AB71ADAB4787CF0EE555DA34BEAB /* Pods-Athena-AssigmentTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Athena-AssigmentTests-Info.plist"; sourceTree = "<group>"; };
+		4176D416C8C1ECEDF19E65A3FD5D3FE5 /* Zip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Zip-dummy.m"; sourceTree = "<group>"; };
+		43C66AD45A6C6C3476A7C909F3E5EAE0 /* Pods-Athena-Assigment-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Athena-Assigment-dummy.m"; sourceTree = "<group>"; };
+		4915D6F7FED825FF393683B002635A22 /* Zip.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Zip.modulemap; sourceTree = "<group>"; };
+		4B5ABF2A6FD5D3B361449A22B0F6DD47 /* Pods-Athena-Assigment-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Athena-Assigment-frameworks.sh"; sourceTree = "<group>"; };
+		53BC63006B10D76C3A46CA28CFFE26EC /* Zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Zip.h; path = Zip/Zip.h; sourceTree = "<group>"; };
+		565B750D879A626D0A95C22BAC7F491F /* Pods-Athena-AssigmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Athena-AssigmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		593D9E27C3338E204E00A56375BA2E15 /* ZipUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZipUtilities.swift; path = Zip/ZipUtilities.swift; sourceTree = "<group>"; };
+		68F6B9BCE9B80792471D52D7DAB52C49 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = Zip/minizip/unzip.c; sourceTree = "<group>"; };
+		69030554F173EA2F91BF066C8BB1B866 /* Zip.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Zip.xcconfig; sourceTree = "<group>"; };
+		763AE22DC03A5B10E0D0F3E840F3607A /* Pods-Athena-AssigmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Athena-AssigmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		7A5F8CD3CF3F869F8B876A5C9E61383D /* Pods-Athena-AssigmentTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Athena-AssigmentTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7F553CF4DB5C5225547CD8524A4F7A1E /* Pods-Athena-AssigmentTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Athena-AssigmentTests-umbrella.h"; sourceTree = "<group>"; };
+		828187A389A632E89824C389AB230610 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		879D7840B094BDC1A2D9FE6E674163B2 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		898A0E0FB340F8B55D9FC29CF3A5AF83 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
+		8A8ACEBAADC0881BE2CD6B3232F2FCC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		923B9152DB233DA7E6C9DCC6195FABB1 /* Pods_Athena_Assigment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Athena_Assigment.framework; path = "Pods-Athena-Assigment.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93EE0BDC80C1191063ABB88B3E6C3578 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		9925BCC76D54655CA0C490611F8A4FCC /* Pods-Athena-Assigment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Athena-Assigment.debug.xcconfig"; sourceTree = "<group>"; };
+		9A7A9C34D671CFE79DE7ED3B4AFC9AE8 /* Pods-Athena-Assigment-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Athena-Assigment-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2710D02F833B88774F52570C5A226BA /* Zip-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zip-umbrella.h"; sourceTree = "<group>"; };
+		A78A4909933A53F28224FD395B19FDB0 /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = Zip/minizip/crypt.h; sourceTree = "<group>"; };
+		A845402EF959A57A4640F2A4F5155943 /* Zip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Zip.framework; path = Zip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD27B1C1B5D2F31F501108838D28EF02 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		B3E7FA7BD4337AFEA13000A8EC6A4B5C /* Pods-Athena-Assigment-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Athena-Assigment-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B7A2134B0E9A7502706157B088C041A7 /* Pods-Athena-AssigmentTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Athena-AssigmentTests-dummy.m"; sourceTree = "<group>"; };
+		B9AA3797AB5875C0C3DEF1DE4CCB9420 /* Pods-Athena-AssigmentTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Athena-AssigmentTests.modulemap"; sourceTree = "<group>"; };
+		C12C5921D2F2A82F523B9F53B9F41C2E /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = Zip/minizip/ioapi.h; sourceTree = "<group>"; };
+		C7896F7BE8F737DD92CFB2D6D0514FAD /* Zip-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Zip-Info.plist"; sourceTree = "<group>"; };
+		C807EC7D2FD4D0B18006734ADE14655F /* Pods-Athena-Assigment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Athena-Assigment.release.xcconfig"; sourceTree = "<group>"; };
+		C8A136D8E1F78C14BD81FA4FAD035491 /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
+		CEACDB564C9B21A8D062A88E2D03038B /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		D727A9AC72D82CF99E514242AC1581F7 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = Zip/minizip/unzip.h; sourceTree = "<group>"; };
+		DB3E04A907C4503447CC114E40ECB3AA /* Pods-Athena-Assigment-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Athena-Assigment-acknowledgements.plist"; sourceTree = "<group>"; };
+		E9224BFA4CAF4111B9D4C1C848C8DECC /* QuickZip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickZip.swift; path = Zip/QuickZip.swift; sourceTree = "<group>"; };
+		E9D04DE86A0FD56B08BCC5E78A9D518E /* Zip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Zip.swift; path = Zip/Zip.swift; sourceTree = "<group>"; };
+		EFA5930F0D06DDDD6C420BCF4A258373 /* Pods_Athena_AssigmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Athena_AssigmentTests.framework; path = "Pods-Athena-AssigmentTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F21AA8C8C60EE4F5EA605B73EC772C8E /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = Zip/minizip/zip.h; sourceTree = "<group>"; };
+		F36D894BF3EE82E7806F333AEC1CB875 /* MBProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MBProgressHUD-Info.plist"; sourceTree = "<group>"; };
+		FFA51DF58BFD369AF6BE252245A18B2F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09A55B5F82D460283DD6D4B3D60824B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D822E284AC96E564F3936712CC693928 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AA3C16B4B3AB40CA74BDDADEF5C143A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A601994621C892656F60D1A1292A9565 /* CoreGraphics.framework in Frameworks */,
+				FF0EE7E6F869E55DA268F25622674EB9 /* Foundation.framework in Frameworks */,
+				64F46B6A8DBA885AF570A54A082D1BAA /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D571A124E4655A4D8AAAEE4E866EB52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E97A9DA04796BEEA464AC0203E0445 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E83557DE587B3C5E04574AD89026332 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DD8E593CD1E9C16A27C316ED398F1EF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F04009B2B08E830E0DAA2A9E1245D6B8 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44DE77D724AE62CCF8C8989DB527B365 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */,
+				923B9152DB233DA7E6C9DCC6195FABB1 /* Pods_Athena_Assigment.framework */,
+				EFA5930F0D06DDDD6C420BCF4A258373 /* Pods_Athena_AssigmentTests.framework */,
+				A845402EF959A57A4640F2A4F5155943 /* Zip.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A47AF3196648A60C99D4B9BAA6CC45D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C8A136D8E1F78C14BD81FA4FAD035491 /* MBProgressHUD.modulemap */,
+				898A0E0FB340F8B55D9FC29CF3A5AF83 /* MBProgressHUD.xcconfig */,
+				828187A389A632E89824C389AB230610 /* MBProgressHUD-dummy.m */,
+				F36D894BF3EE82E7806F333AEC1CB875 /* MBProgressHUD-Info.plist */,
+				93EE0BDC80C1191063ABB88B3E6C3578 /* MBProgressHUD-prefix.pch */,
+				CEACDB564C9B21A8D062A88E2D03038B /* MBProgressHUD-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBProgressHUD";
+			sourceTree = "<group>";
+		};
+		51FC91CA4CEEF7BBC83A4C9CDBEEBCBB /* Pods-Athena-Assigment */ = {
+			isa = PBXGroup;
+			children = (
+				0DE5E3A1B915B25B5E955D7E5C8DA178 /* Pods-Athena-Assigment.modulemap */,
+				B3E7FA7BD4337AFEA13000A8EC6A4B5C /* Pods-Athena-Assigment-acknowledgements.markdown */,
+				DB3E04A907C4503447CC114E40ECB3AA /* Pods-Athena-Assigment-acknowledgements.plist */,
+				43C66AD45A6C6C3476A7C909F3E5EAE0 /* Pods-Athena-Assigment-dummy.m */,
+				4B5ABF2A6FD5D3B361449A22B0F6DD47 /* Pods-Athena-Assigment-frameworks.sh */,
+				111FE4857646805FB8D43CDDE6AD6C2A /* Pods-Athena-Assigment-Info.plist */,
+				9A7A9C34D671CFE79DE7ED3B4AFC9AE8 /* Pods-Athena-Assigment-umbrella.h */,
+				9925BCC76D54655CA0C490611F8A4FCC /* Pods-Athena-Assigment.debug.xcconfig */,
+				C807EC7D2FD4D0B18006734ADE14655F /* Pods-Athena-Assigment.release.xcconfig */,
+			);
+			name = "Pods-Athena-Assigment";
+			path = "Target Support Files/Pods-Athena-Assigment";
+			sourceTree = "<group>";
+		};
+		6BB054CE157E781A72A466B260AADBF0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3F0D9B3E37CBE75906B06995625B1D2 /* MBProgressHUD */,
+				7E7CEFEC164A758ADC8DEAEA3FF9ECC9 /* Zip */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7E7CEFEC164A758ADC8DEAEA3FF9ECC9 /* Zip */ = {
+			isa = PBXGroup;
+			children = (
+				A78A4909933A53F28224FD395B19FDB0 /* crypt.h */,
+				2BAC445E26D4A85B4297D865786B19A1 /* ioapi.c */,
+				C12C5921D2F2A82F523B9F53B9F41C2E /* ioapi.h */,
+				E9224BFA4CAF4111B9D4C1C848C8DECC /* QuickZip.swift */,
+				68F6B9BCE9B80792471D52D7DAB52C49 /* unzip.c */,
+				D727A9AC72D82CF99E514242AC1581F7 /* unzip.h */,
+				1D07A568EFFFFD8B6E95CC0F962FC57B /* zip.c */,
+				F21AA8C8C60EE4F5EA605B73EC772C8E /* zip.h */,
+				53BC63006B10D76C3A46CA28CFFE26EC /* Zip.h */,
+				E9D04DE86A0FD56B08BCC5E78A9D518E /* Zip.swift */,
+				593D9E27C3338E204E00A56375BA2E15 /* ZipUtilities.swift */,
+				8A574AB1B9409E7EDAAC604D9C453DAF /* Support Files */,
+			);
+			name = Zip;
+			path = Zip;
+			sourceTree = "<group>";
+		};
+		8A574AB1B9409E7EDAAC604D9C453DAF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4915D6F7FED825FF393683B002635A22 /* Zip.modulemap */,
+				69030554F173EA2F91BF066C8BB1B866 /* Zip.xcconfig */,
+				4176D416C8C1ECEDF19E65A3FD5D3FE5 /* Zip-dummy.m */,
+				C7896F7BE8F737DD92CFB2D6D0514FAD /* Zip-Info.plist */,
+				0E6C57B7BCC2A93980200D7E7F10B136 /* Zip-prefix.pch */,
+				A2710D02F833B88774F52570C5A226BA /* Zip-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Zip";
+			sourceTree = "<group>";
+		};
+		8B2E115BFD39ADAB58BBC7C0BDBBB132 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				51FC91CA4CEEF7BBC83A4C9CDBEEBCBB /* Pods-Athena-Assigment */,
+				D5428514D94265F1BE16FB801D63BE4D /* Pods-Athena-AssigmentTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				6BB054CE157E781A72A466B260AADBF0 /* Pods */,
+				44DE77D724AE62CCF8C8989DB527B365 /* Products */,
+				8B2E115BFD39ADAB58BBC7C0BDBBB132 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D5428514D94265F1BE16FB801D63BE4D /* Pods-Athena-AssigmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				B9AA3797AB5875C0C3DEF1DE4CCB9420 /* Pods-Athena-AssigmentTests.modulemap */,
+				7A5F8CD3CF3F869F8B876A5C9E61383D /* Pods-Athena-AssigmentTests-acknowledgements.markdown */,
+				24DEAB9B41CF01C78EB9D6AEA2A7568B /* Pods-Athena-AssigmentTests-acknowledgements.plist */,
+				B7A2134B0E9A7502706157B088C041A7 /* Pods-Athena-AssigmentTests-dummy.m */,
+				3419AB71ADAB4787CF0EE555DA34BEAB /* Pods-Athena-AssigmentTests-Info.plist */,
+				7F553CF4DB5C5225547CD8524A4F7A1E /* Pods-Athena-AssigmentTests-umbrella.h */,
+				565B750D879A626D0A95C22BAC7F491F /* Pods-Athena-AssigmentTests.debug.xcconfig */,
+				763AE22DC03A5B10E0D0F3E840F3607A /* Pods-Athena-AssigmentTests.release.xcconfig */,
+			);
+			name = "Pods-Athena-AssigmentTests";
+			path = "Target Support Files/Pods-Athena-AssigmentTests";
+			sourceTree = "<group>";
+		};
+		F04009B2B08E830E0DAA2A9E1245D6B8 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AD27B1C1B5D2F31F501108838D28EF02 /* CoreGraphics.framework */,
+				8A8ACEBAADC0881BE2CD6B3232F2FCC2 /* Foundation.framework */,
+				FFA51DF58BFD369AF6BE252245A18B2F /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F3F0D9B3E37CBE75906B06995625B1D2 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				035E87E1FDE775A3F84641EF23D6A89F /* MBProgressHUD.h */,
+				879D7840B094BDC1A2D9FE6E674163B2 /* MBProgressHUD.m */,
+				4A47AF3196648A60C99D4B9BAA6CC45D /* Support Files */,
+			);
+			name = MBProgressHUD;
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		330A825ACBC8728C72CC09913D0FE735 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B59D8FE732DC50552FCEE4F0D7753B2 /* crypt.h in Headers */,
+				39464E5D948269EA20FD8367F5571A25 /* ioapi.h in Headers */,
+				8FB420C8BEC39AD4DDD47B1C482A91EB /* unzip.h in Headers */,
+				B32AAC463925D876F97F6621FC5D8B5F /* Zip-umbrella.h in Headers */,
+				DD63D6063EB5DAA46DCE7CF331DEA370 /* Zip.h in Headers */,
+				BB43B38CCA690577BF5C8E93FE9283FF /* zip.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F242A8DF7D1C42D302AB43BE2B1FF97 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D997C8F1FF5A9EA24EF1D3F8538220C0 /* Pods-Athena-Assigment-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E28A72EB39EA2D4FD108E08763F6E92 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B56A6B7607652084F01A0C2AA19E25FF /* Pods-Athena-AssigmentTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F0EBAB2761523F18BB73EB4DC5CBEC3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81B9E2F21B1EF9FE4E769103108DEA8A /* MBProgressHUD-umbrella.h in Headers */,
+				EB2A4C29BE958CCB03B3FD9FAB927F1F /* MBProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		31708EE6929C61C0EDA6F5DAE3AF9DB7 /* Zip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 608DA657D5E30B576DA6268896352268 /* Build configuration list for PBXNativeTarget "Zip" */;
+			buildPhases = (
+				330A825ACBC8728C72CC09913D0FE735 /* Headers */,
+				48115676EE455801FCA82B67AD263F38 /* Sources */,
+				7E83557DE587B3C5E04574AD89026332 /* Frameworks */,
+				05A919DA9135F97A03AC971800714018 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zip;
+			productName = Zip;
+			productReference = A845402EF959A57A4640F2A4F5155943 /* Zip.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		32EFFE5CC46BB0BE1BEF8B264EDF968D /* Pods-Athena-Assigment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC224895F345BF0D183FF6484DEB0C26 /* Build configuration list for PBXNativeTarget "Pods-Athena-Assigment" */;
+			buildPhases = (
+				3F242A8DF7D1C42D302AB43BE2B1FF97 /* Headers */,
+				35D8C7C3C9A307621AC927EA6F1747A0 /* Sources */,
+				7D571A124E4655A4D8AAAEE4E866EB52 /* Frameworks */,
+				BC51668D2C78DE471F3764B77D1C32E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68C36FBCC8ADE5182B8323719F3795CC /* PBXTargetDependency */,
+				9EA61DA12F09BD2113E703A6A8270FD3 /* PBXTargetDependency */,
+			);
+			name = "Pods-Athena-Assigment";
+			productName = "Pods-Athena-Assigment";
+			productReference = 923B9152DB233DA7E6C9DCC6195FABB1 /* Pods_Athena_Assigment.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70191416B9573C7ABB42333A08FA2DE4 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */;
+			buildPhases = (
+				8F0EBAB2761523F18BB73EB4DC5CBEC3 /* Headers */,
+				D2F84DC2E2DB3628B17B3841F2837477 /* Sources */,
+				1AA3C16B4B3AB40CA74BDDADEF5C143A /* Frameworks */,
+				435BF4D16B2F9CAB6E7F883F30E32B74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MBProgressHUD;
+			productName = MBProgressHUD;
+			productReference = 8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C51461D7C9525A5682B30C743430FE0D /* Pods-Athena-AssigmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58552F2476D904CB78CD3248599939E1 /* Build configuration list for PBXNativeTarget "Pods-Athena-AssigmentTests" */;
+			buildPhases = (
+				8E28A72EB39EA2D4FD108E08763F6E92 /* Headers */,
+				435E4B2D4ADE80B573D127ED4231AFA1 /* Sources */,
+				09A55B5F82D460283DD6D4B3D60824B7 /* Frameworks */,
+				84F019DABA8F0A3425DC91E333BF424A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52C3DC9BAECBE0670E152AA9393494F0 /* PBXTargetDependency */,
+			);
+			name = "Pods-Athena-AssigmentTests";
+			productName = "Pods-Athena-AssigmentTests";
+			productReference = EFA5930F0D06DDDD6C420BCF4A258373 /* Pods_Athena_AssigmentTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 44DE77D724AE62CCF8C8989DB527B365 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */,
+				32EFFE5CC46BB0BE1BEF8B264EDF968D /* Pods-Athena-Assigment */,
+				C51461D7C9525A5682B30C743430FE0D /* Pods-Athena-AssigmentTests */,
+				31708EE6929C61C0EDA6F5DAE3AF9DB7 /* Zip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05A919DA9135F97A03AC971800714018 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		435BF4D16B2F9CAB6E7F883F30E32B74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F019DABA8F0A3425DC91E333BF424A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC51668D2C78DE471F3764B77D1C32E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35D8C7C3C9A307621AC927EA6F1747A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B36E92ED200CE3CE6C5ACD8EAB12587 /* Pods-Athena-Assigment-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		435E4B2D4ADE80B573D127ED4231AFA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EB9FA13348DE6C101C92D52CDCCBDC1 /* Pods-Athena-AssigmentTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48115676EE455801FCA82B67AD263F38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A5703A14FB0F8D103C25A94DDC82D3 /* ioapi.c in Sources */,
+				C8BEF2B08C3EBA3B3918EB386D40A177 /* QuickZip.swift in Sources */,
+				6C7EE0B20F048C5751C7451A509A5E64 /* unzip.c in Sources */,
+				BA85188518D04B0705E79688AD709C8D /* Zip-dummy.m in Sources */,
+				8F582D2F1FFD2E29FB76EA922E89D2A4 /* zip.c in Sources */,
+				DED61194C9A5D02515F1B85426EC543B /* Zip.swift in Sources */,
+				035CC5E518F04148C9A3A0B3BB0EF1AA /* ZipUtilities.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2F84DC2E2DB3628B17B3841F2837477 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABF20F73D27572CD97071A6D4DB9004 /* MBProgressHUD-dummy.m in Sources */,
+				70EE1C774C978E1876AE6CA1224E897D /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52C3DC9BAECBE0670E152AA9393494F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Athena-Assigment";
+			target = 32EFFE5CC46BB0BE1BEF8B264EDF968D /* Pods-Athena-Assigment */;
+			targetProxy = E8116DB2C84C95DFF4D085F5ACCA4E2A /* PBXContainerItemProxy */;
+		};
+		68C36FBCC8ADE5182B8323719F3795CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = 82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */;
+			targetProxy = 72615F354524E0297E9B4F2AA394625A /* PBXContainerItemProxy */;
+		};
+		9EA61DA12F09BD2113E703A6A8270FD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Zip;
+			target = 31708EE6929C61C0EDA6F5DAE3AF9DB7 /* Zip */;
+			targetProxy = 41271DF0D22A677DC64FA8ADE89817C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07E1F28B8AD6C8F07EE6F7727E39E4E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 898A0E0FB340F8B55D9FC29CF3A5AF83 /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = MBProgressHUD;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		11356937ADB2710C6455B4F138111571 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 565B750D879A626D0A95C22BAC7F491F /* Pods-Athena-AssigmentTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Athena-AssigmentTests/Pods-Athena-AssigmentTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Athena-AssigmentTests/Pods-Athena-AssigmentTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		14CE01D93B49CE32EF37D4C406344EBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69030554F173EA2F91BF066C8BB1B866 /* Zip.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Zip/Zip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Zip/Zip-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Zip/Zip.modulemap";
+				PRODUCT_MODULE_NAME = Zip;
+				PRODUCT_NAME = Zip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7F2AED2D941F434257C1237BF45EE778 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69030554F173EA2F91BF066C8BB1B866 /* Zip.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Zip/Zip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Zip/Zip-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Zip/Zip.modulemap";
+				PRODUCT_MODULE_NAME = Zip;
+				PRODUCT_NAME = Zip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A786902994C30700C1A40C3FA49FCC12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 898A0E0FB340F8B55D9FC29CF3A5AF83 /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = MBProgressHUD;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DBB41A0487D0CAF26B29EDC784930D24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9925BCC76D54655CA0C490611F8A4FCC /* Pods-Athena-Assigment.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Athena-Assigment/Pods-Athena-Assigment-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Athena-Assigment/Pods-Athena-Assigment.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E0F76AEE6D1A4D389222D0FD9BC70B34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 763AE22DC03A5B10E0D0F3E840F3607A /* Pods-Athena-AssigmentTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Athena-AssigmentTests/Pods-Athena-AssigmentTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Athena-AssigmentTests/Pods-Athena-AssigmentTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ECB437504DF805BD96CAABF97400B526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F6B3202CCE846966937039A91515E4BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C807EC7D2FD4D0B18006734ADE14655F /* Pods-Athena-Assigment.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Athena-Assigment/Pods-Athena-Assigment-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Athena-Assigment/Pods-Athena-Assigment.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */,
+				ECB437504DF805BD96CAABF97400B526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58552F2476D904CB78CD3248599939E1 /* Build configuration list for PBXNativeTarget "Pods-Athena-AssigmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11356937ADB2710C6455B4F138111571 /* Debug */,
+				E0F76AEE6D1A4D389222D0FD9BC70B34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		608DA657D5E30B576DA6268896352268 /* Build configuration list for PBXNativeTarget "Zip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F2AED2D941F434257C1237BF45EE778 /* Debug */,
+				14CE01D93B49CE32EF37D4C406344EBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70191416B9573C7ABB42333A08FA2DE4 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A786902994C30700C1A40C3FA49FCC12 /* Debug */,
+				07E1F28B8AD6C8F07EE6F7727E39E4E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC224895F345BF0D183FF6484DEB0C26 /* Build configuration list for PBXNativeTarget "Pods-Athena-Assigment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBB41A0487D0CAF26B29EDC784930D24 /* Debug */,
+				F6B3202CCE846966937039A91515E4BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_Athena_Assigment {
+  umbrella header "Pods-Athena-Assigment-umbrella.h"
+
+  export *
+  module * { export * }
+}
