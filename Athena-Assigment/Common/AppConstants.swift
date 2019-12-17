@@ -17,25 +17,29 @@ struct ReusableItenfiers {
     enum Cell: String {
         case category = "CategoryCell"
         case topicsList = "TopicsListCell"
+        case monograpList = "MonograpListCell"
     }
     
     enum Storyboard: String {
         case topicsList = "TopicsList"
+        case monographList = "MonographList"
     }
 }
 
 enum JSONFiles {
-    case category
+    case Category
     case TopicList
     case TopicSubKey
+    case Monograph
 }
 
 extension JSONFiles {
     var path: String {
         switch self {
-        case .category: return "\(GeneralConstants.detailedPath)list/CategoryList"
+        case .Category: return "\(GeneralConstants.detailedPath)list/CategoryList"
         case .TopicList: return "\(GeneralConstants.detailedPath)list/TopicsList"
         case .TopicSubKey: return "\(GeneralConstants.detailedPath)list/TopicsSubKey"
+        case .Monograph: return "\(GeneralConstants.detailedPath)monograph/"
         }
     }
 }

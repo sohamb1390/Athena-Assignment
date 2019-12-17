@@ -20,6 +20,9 @@
 		44EF5A6123A882E60007E1E3 /* TopicsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EF5A6023A882E60007E1E3 /* TopicsListViewModel.swift */; };
 		44EF5A6423A8838E0007E1E3 /* TopicsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44EF5A6323A8838E0007E1E3 /* TopicsList.storyboard */; };
 		44EF5A6723A8845B0007E1E3 /* TopicsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EF5A6623A8845B0007E1E3 /* TopicsListTableViewController.swift */; };
+		44EF5A6D23A88BDC0007E1E3 /* MonographList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44EF5A6C23A88BDC0007E1E3 /* MonographList.storyboard */; };
+		44EF5A6F23A88C0A0007E1E3 /* MonographListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EF5A6E23A88C0A0007E1E3 /* MonographListTableViewController.swift */; };
+		44EF5A7123A88C2E0007E1E3 /* MonographListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EF5A7023A88C2E0007E1E3 /* MonographListViewModel.swift */; };
 		D05C5045381B91793E03BF05 /* Pods_Athena_AssigmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BB5C2A7875743395D8EE7D /* Pods_Athena_AssigmentTests.framework */; };
 		F201297823A7794F00322B57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F201297723A7794F00322B57 /* AppDelegate.swift */; };
 		F201297A23A7794F00322B57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F201297923A7794F00322B57 /* SceneDelegate.swift */; };
@@ -59,6 +62,9 @@
 		44EF5A6023A882E60007E1E3 /* TopicsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsListViewModel.swift; sourceTree = "<group>"; };
 		44EF5A6323A8838E0007E1E3 /* TopicsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TopicsList.storyboard; sourceTree = "<group>"; };
 		44EF5A6623A8845B0007E1E3 /* TopicsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsListTableViewController.swift; sourceTree = "<group>"; };
+		44EF5A6C23A88BDC0007E1E3 /* MonographList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MonographList.storyboard; sourceTree = "<group>"; };
+		44EF5A6E23A88C0A0007E1E3 /* MonographListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonographListTableViewController.swift; sourceTree = "<group>"; };
+		44EF5A7023A88C2E0007E1E3 /* MonographListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonographListViewModel.swift; sourceTree = "<group>"; };
 		7B2CF740E3DD213E7FDAA345 /* Pods_Athena_Assigment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Athena_Assigment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B7F3E67989791A6462EB6FB /* Pods-Athena-AssigmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Athena-AssigmentTests.debug.xcconfig"; path = "Target Support Files/Pods-Athena-AssigmentTests/Pods-Athena-AssigmentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A5BB5C2A7875743395D8EE7D /* Pods_Athena_AssigmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Athena_AssigmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +158,7 @@
 		442BE72123A7E36F00E49476 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				44EF5A6823A88BB60007E1E3 /* Monograph */,
 				44EF5A5E23A882B80007E1E3 /* TopicsList */,
 				442BE72323A7E38000E49476 /* Category */,
 			);
@@ -214,6 +221,40 @@
 			isa = PBXGroup;
 			children = (
 				44EF5A6623A8845B0007E1E3 /* TopicsListTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		44EF5A6823A88BB60007E1E3 /* Monograph */ = {
+			isa = PBXGroup;
+			children = (
+				44EF5A6B23A88BCB0007E1E3 /* ViewController */,
+				44EF5A6A23A88BC70007E1E3 /* View */,
+				44EF5A6923A88BC10007E1E3 /* ViewModel */,
+			);
+			path = Monograph;
+			sourceTree = "<group>";
+		};
+		44EF5A6923A88BC10007E1E3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				44EF5A7023A88C2E0007E1E3 /* MonographListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		44EF5A6A23A88BC70007E1E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				44EF5A6C23A88BDC0007E1E3 /* MonographList.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		44EF5A6B23A88BCB0007E1E3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				44EF5A6E23A88C0A0007E1E3 /* MonographListTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -368,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F201298423A7795500322B57 /* LaunchScreen.storyboard in Resources */,
+				44EF5A6D23A88BDC0007E1E3 /* MonographList.storyboard in Resources */,
 				F201298123A7795500322B57 /* Assets.xcassets in Resources */,
 				44EF5A6423A8838E0007E1E3 /* TopicsList.storyboard in Resources */,
 				F201297F23A7794F00322B57 /* Main.storyboard in Resources */,
@@ -462,9 +504,11 @@
 				F20129A023A77AA400322B57 /* AthenaNetworkError.swift in Sources */,
 				F201297C23A7794F00322B57 /* CategoryViewController.swift in Sources */,
 				F201299B23A779E300322B57 /* AthenaNetworkAdapter.swift in Sources */,
+				44EF5A7123A88C2E0007E1E3 /* MonographListViewModel.swift in Sources */,
 				F201297823A7794F00322B57 /* AppDelegate.swift in Sources */,
 				442BE71823A7DC9600E49476 /* TopicSubKey.swift in Sources */,
 				F201299E23A77A6D00322B57 /* AthenaAPIRequestProtocol.swift in Sources */,
+				44EF5A6F23A88C0A0007E1E3 /* MonographListTableViewController.swift in Sources */,
 				F201297A23A7794F00322B57 /* SceneDelegate.swift in Sources */,
 				442BE71D23A7E1D500E49476 /* CategoryViewModel.swift in Sources */,
 				442BE71423A7CFCE00E49476 /* Category.swift in Sources */,

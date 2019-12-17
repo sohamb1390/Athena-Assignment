@@ -24,7 +24,7 @@ final class CategoryViewModel {
     
     // MARK: - Fetch Categories
     func fetchCategories() {
-        if let fileURL = FileManager.default.getDownloadFolderURL()?.appendingPathComponent(JSONFiles.category.path).appendingPathExtension("json"), FileManager.default.fileExists(atPath: fileURL.path) {
+        if let fileURL = FileManager.default.getDownloadFolderURL()?.appendingPathComponent(JSONFiles.Category.path).appendingPathExtension("json"), FileManager.default.fileExists(atPath: fileURL.path) {
             if let category = decodeCategory(from: fileURL) {
                 self.category.value = category
             } else {
@@ -35,7 +35,7 @@ final class CategoryViewModel {
                 if let error = error {
                     self?.error.value = error
                 } else if let fileURL = fileURL {
-                    let finalURL = fileURL.appendingPathComponent(JSONFiles.category.path).appendingPathExtension("json")
+                    let finalURL = fileURL.appendingPathComponent(JSONFiles.Category.path).appendingPathExtension("json")
                     let category = self?.decodeCategory(from: finalURL)
                     self?.category.value = category
                 } else {

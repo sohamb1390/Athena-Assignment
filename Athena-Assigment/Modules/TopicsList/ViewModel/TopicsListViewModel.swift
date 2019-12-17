@@ -105,4 +105,12 @@ final class TopicsListViewModel {
         }
         return ""
     }
+    
+    func jsonFileIndex(for indexPath: IndexPath) -> Int? {
+        if topic.value.count > indexPath.row {
+            let jsonFileIndex = topic.value[indexPath.row].index
+            return jsonFileIndex
+        }
+        return nil
+    }
 }
