@@ -8,6 +8,9 @@
 
 import Foundation
 
+/// A completion closure which will return the file URL and an optional error instance
+typealias Handler = (_ fileURL: URL?, _ error: AthenaNetworkError?) -> Void
+
 /// HTTP Methods
 enum HTTPMethod: String {
     case GET = "GET"

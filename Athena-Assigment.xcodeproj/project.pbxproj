@@ -13,6 +13,10 @@
 		442BE71823A7DC9600E49476 /* TopicSubKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442BE71723A7DC9600E49476 /* TopicSubKey.swift */; };
 		442BE71A23A7DF6200E49476 /* Disease.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442BE71923A7DF6200E49476 /* Disease.swift */; };
 		442BE71D23A7E1D500E49476 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442BE71C23A7E1D500E49476 /* CategoryViewModel.swift */; };
+		442BE72023A7E32900E49476 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442BE71F23A7E32900E49476 /* Bindable.swift */; };
+		442BE72723A7E3AD00E49476 /* CategoryFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442BE72623A7E3AD00E49476 /* CategoryFetcher.swift */; };
+		442BE72923A7E4CF00E49476 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442BE72823A7E4CF00E49476 /* AppConstants.swift */; };
+		44EF5A5D23A7EE320007E1E3 /* AppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EF5A5C23A7EE320007E1E3 /* AppExtensions.swift */; };
 		D05C5045381B91793E03BF05 /* Pods_Athena_AssigmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BB5C2A7875743395D8EE7D /* Pods_Athena_AssigmentTests.framework */; };
 		F201297823A7794F00322B57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F201297723A7794F00322B57 /* AppDelegate.swift */; };
 		F201297A23A7794F00322B57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F201297923A7794F00322B57 /* SceneDelegate.swift */; };
@@ -45,6 +49,10 @@
 		442BE71723A7DC9600E49476 /* TopicSubKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicSubKey.swift; sourceTree = "<group>"; };
 		442BE71923A7DF6200E49476 /* Disease.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disease.swift; sourceTree = "<group>"; };
 		442BE71C23A7E1D500E49476 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		442BE71F23A7E32900E49476 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		442BE72623A7E3AD00E49476 /* CategoryFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryFetcher.swift; sourceTree = "<group>"; };
+		442BE72823A7E4CF00E49476 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		44EF5A5C23A7EE320007E1E3 /* AppExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppExtensions.swift; sourceTree = "<group>"; };
 		7B2CF740E3DD213E7FDAA345 /* Pods_Athena_Assigment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Athena_Assigment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B7F3E67989791A6462EB6FB /* Pods-Athena-AssigmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Athena-AssigmentTests.debug.xcconfig"; path = "Target Support Files/Pods-Athena-AssigmentTests/Pods-Athena-AssigmentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A5BB5C2A7875743395D8EE7D /* Pods_Athena_AssigmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Athena_AssigmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +133,50 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		442BE71E23A7E31D00E49476 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				442BE71F23A7E32900E49476 /* Bindable.swift */,
+				442BE72823A7E4CF00E49476 /* AppConstants.swift */,
+				44EF5A5C23A7EE320007E1E3 /* AppExtensions.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		442BE72123A7E36F00E49476 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				442BE72323A7E38000E49476 /* Category */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		442BE72323A7E38000E49476 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				442BE72523A7E3A000E49476 /* Fetcher */,
+				442BE71B23A7E1C400E49476 /* ViewModel */,
+				442BE72423A7E39100E49476 /* ViewController */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		442BE72423A7E39100E49476 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F201297B23A7794F00322B57 /* CategoryViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		442BE72523A7E3A000E49476 /* Fetcher */ = {
+			isa = PBXGroup;
+			children = (
+				442BE72623A7E3AD00E49476 /* CategoryFetcher.swift */,
+			);
+			path = Fetcher;
+			sourceTree = "<group>";
+		};
 		F201296B23A7794E00322B57 = {
 			isa = PBXGroup;
 			children = (
@@ -148,12 +200,12 @@
 		F201297623A7794F00322B57 /* Athena-Assigment */ = {
 			isa = PBXGroup;
 			children = (
-				442BE71B23A7E1C400E49476 /* ViewModel */,
+				442BE72123A7E36F00E49476 /* Modules */,
+				442BE71E23A7E31D00E49476 /* Common */,
 				442BE71223A7CFA900E49476 /* Model */,
 				F201299923A779D200322B57 /* Network */,
 				F201297723A7794F00322B57 /* AppDelegate.swift */,
 				F201297923A7794F00322B57 /* SceneDelegate.swift */,
-				F201297B23A7794F00322B57 /* CategoryViewController.swift */,
 				F201297D23A7794F00322B57 /* Main.storyboard */,
 				F201298023A7795500322B57 /* Assets.xcassets */,
 				F201298223A7795500322B57 /* LaunchScreen.storyboard */,
@@ -358,9 +410,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				442BE72023A7E32900E49476 /* Bindable.swift in Sources */,
 				F20129A223A77B0C00322B57 /* AthenaAPIConstants.swift in Sources */,
 				442BE71623A7DBC200E49476 /* Topic.swift in Sources */,
 				442BE71A23A7DF6200E49476 /* Disease.swift in Sources */,
+				442BE72923A7E4CF00E49476 /* AppConstants.swift in Sources */,
 				F20129A023A77AA400322B57 /* AthenaNetworkError.swift in Sources */,
 				F201297C23A7794F00322B57 /* CategoryViewController.swift in Sources */,
 				F201299B23A779E300322B57 /* AthenaNetworkAdapter.swift in Sources */,
@@ -370,6 +424,8 @@
 				F201297A23A7794F00322B57 /* SceneDelegate.swift in Sources */,
 				442BE71D23A7E1D500E49476 /* CategoryViewModel.swift in Sources */,
 				442BE71423A7CFCE00E49476 /* Category.swift in Sources */,
+				442BE72723A7E3AD00E49476 /* CategoryFetcher.swift in Sources */,
+				44EF5A5D23A7EE320007E1E3 /* AppExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

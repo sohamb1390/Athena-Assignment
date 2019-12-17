@@ -42,28 +42,28 @@ class Athena_AssigmentTests: XCTestCase {
             case .success(let url):
                 XCTAssertNotNil(url, "Download Location URL not found")
                 print(url!)
-                expectation.fulfill()
                 self.fileSave(from: url!)
+                expectation.fulfill()
             case .failure(let error):
                 XCTAssertNil(error, "API responded with error")
             }
         }
-        wait(for: [expectation], timeout: 15.0)
+        wait(for: [expectation], timeout: 40.0)
     }
     
     func fileSave(from location: URL) {
         let documentsUrl = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
         // your destination file url
-        let destination = documentsUrl.appendingPathComponent("Athena-Assignment")
+        let destination = documentsUrl.appendingPathComponent(GeneralConstants.folderName)
         print(destination)
         
         if FileManager.default.fileExists(atPath: destination.path) {
-            print("File Exists at \(destination.path.appending("/Athena-Assignment"))")
+            print("File Exists at \(destination.path)")
         } else {
             do {
-                try FileManager.default.moveItem(at: location, to: destination)
+                try FileManager.default.moveItem(at: location, to: documentsUrl.appendingPathComponent(GeneralConstants.folderName).appendingPathExtension("zip"))
                 print("file saved at: \(destination)")
-                unzipFile(at: destination)
+                unzipFile(at: documentsUrl)
             } catch {
                 XCTFail(error.localizedDescription)
             }
@@ -73,12 +73,9 @@ class Athena_AssigmentTests: XCTestCase {
     // MARK: - Unzip Test
     func unzipFile(at url: URL){
         do {
-            let unzipDirectory = try Zip.quickUnzipFile(url) // Unzip
+            let unzipDirectory = try Zip.quickUnzipFile(url.appendingPathComponent("\(GeneralConstants.folderName)/").appendingPathExtension("zip")) // Unzip
             XCTAssert(!unzipDirectory.path.isEmpty, "Directory not found")
             print("---- file unzipped at: ------- \(unzipDirectory.path)")
-
-            let zipFilePath = try Zip.quickZipFiles([url], fileName: "Athena-Assignment") // Zip
-            XCTAssert(!zipFilePath.absoluteString.isEmpty, "zipFilePath not found")
         } catch (let error) {
             XCTFail(error.localizedDescription)
         }

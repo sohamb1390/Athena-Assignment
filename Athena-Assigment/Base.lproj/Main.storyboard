@@ -23,33 +23,55 @@
             </objects>
             <point key="canvasLocation" x="-812" y="4"/>
         </scene>
-        <!--Items-->
+        <!--Categories-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Athena_Assigment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CategoryViewController" customModule="Athena_Assigment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3XL-gx-U2h">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" textLabel="NXP-Vu-XGY" rowHeight="64" style="IBUITableViewCellStyleDefault" id="fU7-Td-75T">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fU7-Td-75T" id="YsX-nz-939">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NXP-Vu-XGY">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="64"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="3XL-gx-U2h" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="GfH-e6-abb"/>
                             <constraint firstItem="3XL-gx-U2h" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mmO-3R-4w5"/>
                             <constraint firstItem="3XL-gx-U2h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oW2-37-gE8"/>
                             <constraint firstAttribute="bottom" secondItem="3XL-gx-U2h" secondAttribute="bottom" id="r09-hG-8sS"/>
+                            <constraint firstItem="3XL-gx-U2h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vb2-pu-0OI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Items" id="VSj-cX-vvS"/>
+                    <navigationItem key="navigationItem" title="Categories" id="VSj-cX-vvS"/>
+                    <connections>
+                        <outlet property="tableView" destination="3XL-gx-U2h" id="Ccr-Iw-3kU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="23" y="3"/>
+            <point key="canvasLocation" x="21.739130434782609" y="2.6785714285714284"/>
         </scene>
     </scenes>
 </document>
