@@ -13,6 +13,9 @@ final class CategoryViewModel {
     private (set) var category: Bindable<Category?> = Bindable(nil)
     private (set) var error: Bindable<AthenaNetworkError?> = Bindable(nil)
     private var fetcher: CategoryFetcher?
+    var screenTitle: String {
+        return NSLocalizedString("Categories", comment: "")
+    }
     
     // MARK: - Constructor
     init() {

@@ -14,7 +14,14 @@ struct GeneralConstants {
 }
 
 struct ReusableItenfiers {
-    static let categoryCell = "CategoryCell"
+    enum Cell: String {
+        case category = "CategoryCell"
+        case topicsList = "TopicsListCell"
+    }
+    
+    enum Storyboard: String {
+        case topicsList = "TopicsList"
+    }
 }
 
 enum JSONFiles {

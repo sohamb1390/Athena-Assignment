@@ -26,6 +26,7 @@ class CategoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        title = viewModel.screenTitle
         bind()
         fetchCategory()
     }
@@ -34,6 +35,17 @@ class CategoryViewController: UIViewController {
     private func fetchCategory() {
         showLoader(show: true)
         viewModel.fetchCategories()
+    }
+    
+    // MARK: - Navigation
+    private func navigateToTopicsList(with index: Int) {
+        // Create `TopicsListViewModel` with selected row
+        let topicsListViewModel = TopicsListViewModel(with: index)
+        
+        if let topicsListVC = UIStoryboard(name: ReusableItenfiers.Storyboard.topicsList.rawValue, bundle: .main).instantiateViewController(identifier: TopicsListTableViewController.className) as? TopicsListTableViewController {
+            topicsListVC.bind(with: topicsListViewModel)
+            navigationController?.pushViewController(topicsListVC, animated: true)
+        }
     }
 }
 
@@ -66,7 +78,7 @@ extension CategoryViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: ReusableItenfiers.categoryCell, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: ReusableItenfiers.Cell.category.rawValue, for: indexPath)
         let text = viewModel.text(at: indexPath)
         cell.textLabel?.text = text
         return cell
@@ -74,6 +86,7 @@ extension CategoryViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        navigateToTopicsList(with: indexPath.row)
     }
 }
 
